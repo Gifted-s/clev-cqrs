@@ -4,5 +4,18 @@ orbs:
 workflows:
   node-tests:
     jobs:
-      - node/test
-
+      test:
+        executor: node/default
+        steps:
+          - checkout
+          - node/install-packages:
+              cache-path: ~/project/node_modules
+              override-ci-command: npm install
+          - run: npm run test
+    orbs:
+      node: 'circleci/node:x.y'
+    version: 2.1
+    workflows:
+      test_my_app:
+        jobs:
+          - test
