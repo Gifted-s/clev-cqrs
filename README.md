@@ -37,9 +37,9 @@ import clevCqrs from "clev-cqrs";
 
 ## Overview
 
-### Create a Schema
+### Create a Schema 
 
-First, we need to create a schema using the Schema constructor from clev-cqrs, the schema should look something like this
+First, we need to create a schema using the Schema constructor or simply run ```sh node ./node_modules/clev-cqrs/src/createTemplate``` from clev-cqrs, the schema should look something like this
 
 ```js
 let   clevCqrs = require("clev-cqrs");
@@ -351,31 +351,10 @@ let SchemaName = new clevCqrs.Schema({
     }
 
   },
-  commandHandlers: {
-    //handleCreate command handler is required
-    handleCreate: function (yourEntityName, eventData) {
-      eventData.id = yourEntityName.id; //required
-      // add other entity details here using example of this format
-      // eventData.description=yourEntityName.description
-      // eventData.name = yourEntityName.name
-    },
+ 
 
-    // other command handlers here e.g
-    // handleChangeName: function(product, eventData){
-    //     eventData.name= product.name
-    // },
-  },
-  eventStore: {
-    methods: {
-      get: eventStore.get,
-      delete: eventStore.delete,
-      getAll: eventStore.getAll,
-      save: eventStore.save,
-    },
-  },
-  eventHandlers: {
-    views: [ExampleView, ExampleView2],
-  },
+
+ //.........
 });
 
 clevCqrs.setSchema(SchemaName);
