@@ -127,7 +127,7 @@ commandHandlers are mearnt to handle any change that happens to your entity e.g(
             currentData.name= changesObject.name
         },
         handleDebitWallet: function(changesObject, currentData){
-            currentData.wallet = currentData.wallet - changesObject.amount
+            currentData.wallet = currentData.wallet - changesObject.wallet
         },
 
         //....
@@ -138,8 +138,8 @@ commandHandlers are mearnt to handle any change that happens to your entity e.g(
 
 ### eventStore `object`
 
-the event store is an object that points to methods. There are four methods that must be provided
-`get`, `getAll`, `delete` and `save`. The `get` property should be set to an asynchronous function that takes in an id, search for an object from your database with the id and return it. The `getAll` property should be set to an asynchronous function that returns all the documents in your database in as an array.The `delete` property should be set to an asynchronous function that takes in an id and delete a document based on the id that was passed. The `save` property should be set to a function that saves a object to your database. e.g
+eventStore is an object that points to methods. There are four methods that must be provided
+`get`, `getAll`, `delete` and `save`. The `get` property should be set to an asynchronous function that takes in an id, search for an object from your database with the id and return it. The `getAll` property should be set to an asynchronous function that returns all the documents in your database as an array. The `delete` property should be set to an asynchronous function that takes in an id and delete a document based on the id that was passed. The `save` property should be set to a function that saves a object to your database. e.g
 
 ```js
 //if you are using a mongo db
@@ -183,9 +183,14 @@ views are various ways you want see your data represented, for example if you ar
 
 ###
 
-To create a view, create an instance of the clevCqrs.View then execute the setHandlers method. the setHandlers method takes in an object parameter, this object would have the handlers for any change that happens, each handler is a function that takes in two parameters, `1` an object representing the change that was made e.g {age : 20} . `2` callback this should always be called after event is handled to show that no error occured, you can pass an error to it, it would be thrown if it occurs. Note that eventHandlers in a view must use thesame name that was used for the commandHandler e.g `handleChangeName` , `handleChangeAddress` and so on. Each view must have a handleCreate event handler as this would be used to create the entity don't forget to set the id property on the entity while creating. An example of a view is shown below
+To create a view, create an instance of the clevCqrs.View then execute the setHandlers method. the setHandlers method takes in an object parameter, this object would have the handlers for any change that happens, each handler is a function that takes in two parameters, `1` an object representing the change that was made e.g ``{age : 20}` . `2` `callback` this should always be called after an event is handled to show that no error occured, you can pass an error to it, it would be thrown if it occurs. 
+
+
+**Note** that eventHandlers in a view must use thesame name that was used for the commandHandler e.g `handleChangeName` , `handleChangeAddress` and so on. Each view must have a handleCreate event handler as this would be used to create the entity don't forget to set the id property on the entity while creating. An example of a view is shown below
 
 ```js
+
+//Assuming you are using a mongo database
 const clevCqrs = require("clev-cqrs");
 let ProductDetailsView = new clevCqrs.View();
 //set handler for any event any event that is related to this view, this should relate to changes you want to make to the read database
@@ -249,7 +254,7 @@ clevCqrs.setSchema(SchemaName);
 ```
 
 # sending a command
-After you have created a schema and set it, the steps remaining are very few. Call the module where you created your schema in your root module e.g (app.js or index.js) by using the require function. You can send commands by using the clevCQRS.handler object.the format is clevCQRS.handler.`command handlers name e.g handleCreate or handleChangeName`. The commandHandler that you provided in your schema would be used here. Note that every command handler apart from the handleCreate takes in an id `string`, command `object` and callback function,the id is the id of document that you want to change , command would take in the name of the attribute that you want to change and the new value you want it to be, and the callback would be a function the returns the updated entity and  all the previous events that has ever occured to that entity. e.g
+After you have created a schema and set it, the steps remaining are very few. Call the module where you created your schema in your root module e.g (app.js or index.js) by using the require function. You can send commands by using the clevCQRS.handler object. The format is clevCQRS.handler. `command handlers name e.g handleCreate or handleChangeName`. The commandHandler that you provided in your schema would be used here. Note that every command handler apart from the handleCreate takes in an id `string`, command `object` and callback function,the id is the id of document that you want to change , command would take in the name of the attribute that you want to change and the new value you want it to be, and the callback would be a function the returns the updated entity and  all the previous events that has ever occured to that entity. e.g
 
 ```js
 
@@ -299,7 +304,7 @@ app.use(clevCqrs.generatePage)
 
 
 ## Types in clev-CQRS
-clev-Cqrs support various types wish are
+clev-Cqrs support various types which are
  * string
  * number
  * buffer
