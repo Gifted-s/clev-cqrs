@@ -303,7 +303,7 @@ app.use(clevCqrs.generatePage)
 ```
 
 
-## Types in clev-CQRS
+## Types in clev-cqrs
 clev-Cqrs support various types which are
  * string
  * number
