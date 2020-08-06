@@ -114,15 +114,15 @@ commandHandlers are mearnt to handle any change that happens to your entity e.g(
 ```js
     commandHandlers: {
         //handleCreate command handler is required
-        //every command handler must start with handle
+        //every command handler must start with the word handle
         handleCreate: function (changesObject, currentData) {
             currentData.id = changesObject.id //required
             // add other entity details here using example of this format
-            // eventData.description= changedObject.description
-            // eventData.name = changedObject.name
+            // currentData.description= changesObject.description
+            // currentData.name = changesObject.name
         },
 
-
+        // examples of command handlers
         handleChangeName: function(changesObject, currentData){
             currentData.name= changesObject.name
         },
