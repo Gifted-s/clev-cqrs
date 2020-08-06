@@ -1,0 +1,97 @@
+<header>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</header>
+
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+    <a class="navbar-brand" href="#">
+        <h4 class="text-light">EventStore
+
+            <span class="text-light ml-1 badge badge-secondary tt"> 1.0.0</span>
+        </h4>
+
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Documentation</button>
+        </form>
+    </div>
+</nav>
+
+<div class="container-fluid pp">
+    <h2 class="text-center ttt">{{name}}s</h2>
+
+
+   <div class="ff">
+
+ 
+    {{# each event}}
+
+    <div class="container yy">
+        <div style="background-color: white;" class="it row">
+
+
+            <div class="col-md-12">
+                <h6 class="text-center mb-4 mt-3">Aggregate id : {{this.id}}</h6>
+            </div>
+            <div class="col-md-2">
+                <h5> Event id</h5>
+            </div>
+            <div class="col-md-2">
+                <h5> Event type</h5>
+
+            </div>
+            <div class="col-md-2">
+                <h5> Time of Event</h5>
+            </div>
+            <div class="col-md-6">
+                <h5> Event data</h5>
+
+            </div>
+            <div class="col-md-12">
+                <hr />
+
+            </div>
+
+        </div>
+    </div>
+    {{# each this.events}}
+    <div class="container cc">
+        <div class="row nn ">
+            <div class="col-md-2">
+                {{this.eventId}}
+
+            </div>
+            <div class="col-md-2">
+                {{this.eventName}}
+
+            </div>
+            <div class="col-md-2">
+                {{this.eventTime}}
+            </div>
+            <div class="col-md-6">
+                {{this.data}}
+            </div>
+
+        </div>
+    </div>
+    {{/ each}}
+
+</div>
+{{/ each}}
+</div>
+  </div>
+<div class="mb-5">
+
+</div>
