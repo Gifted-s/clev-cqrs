@@ -2,11 +2,11 @@
 
 clev-cqrs is a nodejs library that allows you to incorporate CQRS and Event sourcing into your nodejs project without any stress. It is designed to be compatible with any database and work in an asynchronous environment. clev-cqrs supports callbacks. Just hearing CQRS or Event Sourcing for the first time? check out [this](https://eventstore.com/blog/event-sourcing-and-cqrs/) article
 
-![alt text](https://firebasestorage.googleapis.com/v0/b/oaiup-ee651.appspot.com/o/Screenshot%20(63).png?alt=media&token=312594db-b6fc-40c8-94e0-a222314ba788)
+![alt text](https://firebasestorage.googleapis.com/v0/b/oaiup-ee651.appspot.com/o/Screenshot%20(64).png?alt=media&token=63f615c5-a6de-44db-b20c-8fd9042dd9b8)
 
 ## Documentation
 
-The official documentation website is at our [repository](https://github.com/Giftedcooperation/clev-cqrs).
+The official documentation website is at our [repository](https://github.com/Gifted-s/clev-cqrs).
 
 ## Supported Database
 
@@ -15,7 +15,7 @@ clev-cqrs supports any database. All `relational(sql)` and `non-relational(no-sq
 ## Contributors
 
 Pull requests are always welcome! Please base pull requests against the `master`
-branch and follow the [contributing guide](https://github.com/Giftedcooperation/clev-cqrs/CONTRIBUTING.md).
+branch and follow the [contributing guide](https://github.com/Gifted-s/clev-cqrs/CONTRIBUTING.md).
 Do **not** modify any files in the `public`, `express`and `views` folder. Please make
 your changes and contribution in the `src` folder.
 
@@ -305,7 +305,7 @@ app.use(clevCqrs.generatePage)
 ```
 It looks like this
 
-![alt text](https://firebasestorage.googleapis.com/v0/b/oaiup-ee651.appspot.com/o/Screenshot%20(63).png?alt=media&token=312594db-b6fc-40c8-94e0-a222314ba788)
+![alt text](https://firebasestorage.googleapis.com/v0/b/oaiup-ee651.appspot.com/o/Screenshot%20(64).png?alt=media&token=63f615c5-a6de-44db-b20c-8fd9042dd9b8)
 
 
 ## Types in clev-cqrs
