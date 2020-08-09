@@ -19,7 +19,7 @@ describe('Concurrency check', () => {
         eventId: 'e9ed4d50-d465-11ea-8552-bdb6f36223d212345',
         aggregateId: 'e9ecb110d465-11ea-8552-bdb6f36223d2-3439-4jdkflll',
         eventVersion: 1,
-        eventTime: 1596334476965
+        eventTime: 15963344769678
       }
     ],
     0,
