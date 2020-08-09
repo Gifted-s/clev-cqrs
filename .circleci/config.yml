@@ -3,8 +3,7 @@ orbs:
 
 version: 2.1
 
-workflows:
-  node-test:
-    jobs:
-      - node/tests:
-          version: 14.3.0
+
+jobs:
+  - node/tests:
+      version: 14.3.0
