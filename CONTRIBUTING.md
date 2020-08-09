@@ -31,7 +31,7 @@ If you have a question about clev-cqrs (not a bug report) please post it to [Sta
     - `for (..) {`
     - `while (..) {`
     - `function(err) {`
-- Write tests and make sure they pass (tests are in the [test](https://github.com/Gifted-s/clev-cqrs/tree/master/__test__/tests) directory).
+- Write tests and make sure they pass (tests are in the [tests](https://github.com/Gifted-s/clev-cqrs/tree/master/__test__/tests) directory).
 
 ### Running the tests
 - Open a terminal and navigate to the root of the project
