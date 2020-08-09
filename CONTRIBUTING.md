@@ -49,7 +49,7 @@ To contribute to the [API documentation](https://github.com/Gifted-s/clev-cqrs)
 ## Financial contributions
 
 I also welcome financial contributions in full transparency. Contact me at [Github](https://github.com/Gifted-s)  or <a href="mailto:sunkanmiadewumi1@gmail.com" target="_blank">sunkanmiadewumi1@gmail.com</a>.
-Anyone can file an expense. If the expense makes sense for the development of the community, it will be "merged" in the ledger of our open collective by the core contributors and the person who filed the expense will be reimbursed.
+Anyone can file an expense. If the expense makes sense for the development of the community, it will be "merged" in the ledger of the open collective by the core contributors and the person who filed the expense will be reimbursed.
 
 
 
