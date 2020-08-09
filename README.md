@@ -2,6 +2,8 @@
 
 clev-cqrs is a nodejs library that allows you to incorporate CQRS and Event sourcing into your nodejs project without any stress. It is designed to be compatible with any database and work in an asynchronous environment. clev-cqrs supports callbacks. Just hearing CQRS or Event Sourcing for the first time? check out [this](https://eventstore.com/blog/event-sourcing-and-cqrs/) article
 
+![alt text](https://firebasestorage.googleapis.com/v0/b/oaiup-ee651.appspot.com/o/Screenshot%20(63).png?alt=media&token=312594db-b6fc-40c8-94e0-a222314ba788)
+
 ## Documentation
 
 The official documentation website is at our [repository](https://github.com/Giftedcooperation/clev-cqrs).
@@ -301,6 +303,9 @@ clev-cqrs provides a nice user interface to view all the events that has occured
 const clevCqrs = require('clev-cqrs')
 app.use(clevCqrs.generatePage)
 ```
+It looks like this
+
+![alt text](https://firebasestorage.googleapis.com/v0/b/oaiup-ee651.appspot.com/o/Screenshot%20(63).png?alt=media&token=312594db-b6fc-40c8-94e0-a222314ba788)
 
 
 ## Types in clev-cqrs
