@@ -42,8 +42,9 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "scripts": {
-    "test": "jest __test__ --watchAll",
-    "lint": "eslint -v"
+    "test": "jest __test__ ",
+    "lint": "eslint ./src/*",
+    "ci": "npm run lint && npm run test -- --coverage"
   },
   "deprecated": false,
   "repository": {
