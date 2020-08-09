@@ -1,7 +1,7 @@
 {
   "name": "clev-cqrs",
   "description": "An easy and standard framework for incorporating cqrs(command query responsibility segregation) and event sourcing into your project in nodejs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "author": "Adewumi Sunkanmi",
   "engines": {
@@ -13,7 +13,6 @@
       "email": "sunkanmiadewumi1@gmail.com"
     }
   ],
-  
   "files": [
     "src/",
     "views/",
@@ -22,7 +21,6 @@
     "LICENSE",
     "index.js",
     "README.md"
-    
   ],
   "keywords": [
     "clev-cqrs",
@@ -89,8 +87,7 @@
     "express-handlebars": "^5.1.0",
     "hbs": "^4.1.1",
     "lodash": "*",
-    "uuid":"*"
-   
+    "uuid": "*"
   },
   "devDependencies": {
     "jest": "^26.2.2",
