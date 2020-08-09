@@ -1,6 +1,7 @@
 ## Contributing to clev-cqrs
 
-If you have a question about clev-cqrs (not a bug report) please post it to either [StackOverflow](http://stackoverflow.com/questions/tagged/clev-cqrs)
+If you have a question about clev-cqrs (not a bug report) please post it to [StackOverflow](http://stackoverflow.com/questions/tagged/clev-cqrs) or send a 
+<a href="mailto:sunkanmiadewumi1@gmail.com" target="_blank">mail</a>
 
 ### Reporting bugs
 
@@ -36,7 +37,7 @@ If you have a question about clev-cqrs (not a bug report) please post it to eith
 - Open a terminal and navigate to the root of the project
 - execute `npm install` to install the necessary dependencies
 - Make the index.js file listen to a particular port.
-- execute `npm test` to run the tests (we're using [Jest](https://jestjs.io/))
+- execute `npm test` to run the tests (I am using [Jest](https://jestjs.io/))
 
 
 ### Documentation
@@ -47,7 +48,7 @@ To contribute to the [API documentation](https://github.com/Gifted-s/clev-cqrs)
 
 ## Financial contributions
 
-We also welcome financial contributions in full transparency. Contact us at [open collective](https://github.com/Gifted-s)  or <a href="mailto:sunkanmiadewumi1@gmail.com" target="_blank">.
+I also welcome financial contributions in full transparency. Contact me at [Github](https://github.com/Gifted-s)  or <a href="mailto:sunkanmiadewumi1@gmail.com" target="_blank">sunkanmiadewumi1@gmail.com</a>.
 Anyone can file an expense. If the expense makes sense for the development of the community, it will be "merged" in the ledger of our open collective by the core contributors and the person who filed the expense will be reimbursed.
 
 
