@@ -1,9 +1,10 @@
 orbs:
   node: circleci/node@2.0.2
 
+  
 version: 2.1
-
-
-jobs:
-  - node/tests:
-      version: 14.3.0
+workflows:
+  matrix-tests:
+    jobs:
+      - node/test:
+          version: 14.3.0
