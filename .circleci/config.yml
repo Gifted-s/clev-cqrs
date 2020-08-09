@@ -6,5 +6,5 @@ version: 2.1
 workflows:
   node-test:
     jobs:
-      - node/test:
+      - node/tests:
           version: 14.3.0
