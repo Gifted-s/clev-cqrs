@@ -20,7 +20,7 @@ If you have a question about clev-cqrs (not a bug report) please post it to [Sta
 
 ### Fixing bugs / Adding features
 
-- Before starting to write code, look for existing [issues](https://github.com/Gifted-s/clev-cqrs/issues). That way you avoid working on something that might not be of interest or that has been addressed already in a different branch. You can create a new issue [here](https://github.com/Gifted-s/clev-cqrs/issuess/new).
+- Before starting to write code, look for existing [issues](https://github.com/Gifted-s/clev-cqrs/issues). That way you avoid working on something that might not be of interest or that has been addressed already in a different branch. You can create a new issue [here](https://github.com/Gifted-s/clev-cqrs/issues/new).
   - _The source of this project is written in javascript, not coffeescript or typescript. Please write your bug reports in JavaScript that can run in vanilla Node.js_.
 - Fork the [repo](https://github.com/Gifted-s/clev-cqrs).
 - Follow the general coding style of the rest of the project using the eslint coding standard:
