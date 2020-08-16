@@ -298,7 +298,7 @@ app.post('/description/:id', (req,res)=>{
 
 ## eventstore page
 
-clev-cqrs provides a nice user interface to view all the events that has occured to all you data. This include the event id, the event type e.g(changeName), the event time and the event data. to generatge this page just add the clevCQRS.generatePage to your middleware. e.g
+clev-cqrs provides a nice user interface to view all the events that has occured to your data. This include the event id, the event type e.g(changeName), the event time and the event data. to generatge this page just add the clevCQRS.generatePage as a middleware. e.g
 ```js
 const clevCqrs = require('clev-cqrs')
 app.use(clevCqrs.generatePage)
@@ -363,10 +363,30 @@ let SchemaName = new clevCqrs.Schema({
 });
 
 clevCqrs.setSchema(SchemaName);
-```
+
 
 ```
-   
+You can set the **min** and **max** value if the data type is a number as shown in the code above and you can also make a field required or not.
+
+### Here is an example of a command with all the clev-cqrs data types
+```js
+let command = {
+      name: 1,//number type
+      address: { //object type
+        town: 'ado'
+      },
+      roles: [1, 2],//array type
+      mixed: '1234',// mixed sample
+      dob: 123, // date type
+      nameToBuffer: new Buffer.alloc(1, 2),// buffer type
+}
+
+app.post('/create', (req,res)=>{
+   clevCqrs.handler.handleCreate(command,function(newEvent){
+    res.status(201).send({created: newEvent.id})
+   }) 
+})
+
 
 
 ## License
