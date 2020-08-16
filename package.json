@@ -40,6 +40,7 @@
   ],
   "optionalDependencies": {},
   "license": "MIT",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "readmeFilename": "README.md",
   "scripts": {
     "test": "jest __test__ ",
@@ -83,12 +84,12 @@
     "type-is": "~1.6.18",
     "utils-merge": "1.0.1",
     "vary": "~1.1.2",
-    "either.js": "*",
-    "eventemitter2": "*",
+    "either.js": "0.0.1",
+    "eventemitter2": "6.4.3",
     "express-handlebars": "^5.1.0",
     "hbs": "^4.1.1",
-    "lodash": "*",
-    "uuid": "*"
+    "lodash": "4.17.19",
+    "uuid": "8.3.0"
   },
   "devDependencies": {
     "jest": "^26.2.2",
