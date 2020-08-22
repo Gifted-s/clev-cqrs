@@ -262,9 +262,12 @@ After you have created a schema and set it, the steps remaining are very few. Ca
 
 let express = require('express')
 const app = express()
-require('./schema')
+// file you setup your schema
+require('./setup')
 const clevCqrs = require('clev-cqrs')
-app.use(clevCqrs.generatePage)
+// this module was auto installed when you installed clev-cqrs
+const clevCqrsUi = require('clev-cqrs-ui')
+app.use(clevCqrsUi.generatePage)
 
 app.post('/create', (req,res)=>{
     let command = {
@@ -300,13 +303,17 @@ app.post('/description/:id', (req,res)=>{
 
 clev-cqrs provides a nice user interface to view all the events that has occured to your data. This include the event id, the event type e.g(changeName), the event time and the event data. to generatge this page just add the clevCQRS.generatePage as a middleware. e.g
 ```js
-const clevCqrs = require('clev-cqrs')
-app.use(clevCqrs.generatePage)
+// this module was auto instaled when you installed clev-cqrs
+const clevCqrsUi = require('clev-cqrs-ui')
+app.use(clevCqrsUi.generatePage)
 ```
+You can enter this in the browser to see your nice UI ***localhost:4000/cqrs***
+
 It looks like this
 
 ![alt text](https://firebasestorage.googleapis.com/v0/b/oaiup-ee651.appspot.com/o/Screenshot%20(64).png?alt=media&token=63f615c5-a6de-44db-b20c-8fd9042dd9b8)
 
+***[Contributions are opened to make this UI better](https://github.com/Gifted-s/clev-cqrs-ui)***
 
 ## Types in clev-cqrs
 clev-Cqrs support various types which are
