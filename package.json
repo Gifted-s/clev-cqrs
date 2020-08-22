@@ -47,7 +47,7 @@
   "scripts": {
     "test": "jest __test__ ",
     "lint": "eslint ./src/*",
-    "ci": "npm run lint && npm run test "
+    "ci": "npm run lint && npm run test"
   },
   "deprecated": false,
   "repository": {
