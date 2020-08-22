@@ -15,9 +15,6 @@
   ],
   "files": [
     "src/",
-    "views/",
-    "express/",
-    "public/",
     "LICENSE",
     "index.js",
     "README.md"
