@@ -50,7 +50,7 @@
     "type": "git",
     "url": "git://github.com/Gifted-s/clev-cqrs.git"
   },
-  "homepage": "https://github.com/Gifted-s/clev-cqrs",
+  "homepage": "https://github.com/Gifted-s/clev-cqrs#readme",
   "dependencies": {
     "accepts": "~1.3.7",
     "clev-cqrs-ui":"*",

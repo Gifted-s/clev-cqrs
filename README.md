@@ -9,7 +9,7 @@ clev-cqrs is a nodejs library that allows you to incorporate CQRS and Event sour
 
 ## Documentation
 
-The official documentation website is at our [repository](https://github.com/Gifted-s/clev-cqrs).
+The official documentation website is at our [repository](https://github.com/Gifted-s/clev-cqrs#readme).
 
 ## Supported Database
 
@@ -19,8 +19,7 @@ clev-cqrs supports any database. All `relational(sql)` and `non-relational(no-sq
 
 Pull requests are always welcome! Please base pull requests against the `master`
 branch and follow the [contributing guide](https://github.com/Gifted-s/clev-cqrs/CONTRIBUTING.md).
-Do **not** modify any files in the `public`, `express`and `views` folder. Please make
-your changes and contribution in the `src` folder.
+Please make your changes and contribution in the `src` folder.
 
 ## Installation
 

@@ -35,7 +35,7 @@ function Entity (id) {
           }
         }
       }
-      this.apply(handler.slice(6, handler.length + 1), command)
+      this.apply(handler.slice(6, handler.length + 1), { ...command, data: { changedData: JSON.stringify(command) } })
     }
   }
 

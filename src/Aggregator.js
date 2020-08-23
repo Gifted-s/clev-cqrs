@@ -42,7 +42,7 @@ function enhanceEvent (eventName, domainEvent, aggregator) {
   domainEvent.eventId = uuid.v1()
   domainEvent.aggregateId = aggregator._id
   domainEvent.eventVersion = aggregator._eventVersion
-  domainEvent.eventTime = Date.now()
+  domainEvent.eventTime = new Date(Date.now()).toUTCString()
 }
 
 module.exports = Aggregator
