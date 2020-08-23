@@ -1,4 +1,10 @@
 /* eslint-disable standard/no-callback-literal */
+'use strict'
+/**
+ * @param {string} type
+ * @param {*} input
+ * @param {function} callback
+ */
 function compareType (type, input, callback) {
   if (type === 'array') {
     if (!Array.isArray(input)) {
@@ -26,5 +32,5 @@ function compareType (type, input, callback) {
     return callback('error', type)
   }
 }
-
+// export compareType
 module.exports = compareType
