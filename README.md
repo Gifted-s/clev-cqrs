@@ -4,7 +4,7 @@ clev-cqrs is a nodejs library that allows you to incorporate CQRS and Event sour
 
 
 
-![alt text](https://firebasestorage.googleapis.com/v0/b/oaiup-ee651.appspot.com/o/Screenshot%20(64).png?alt=media&token=63f615c5-a6de-44db-b20c-8fd9042dd9b8)
+![alt text](https://firebasestorage.googleapis.com/v0/b/oaiup-ee651.appspot.com/o/Screenshot%20(68).png?alt=media&token=54816f3c-1003-49ad-a8a2-910c03385946)
 
 
 ## Documentation
@@ -313,7 +313,7 @@ You can enter this in the browser to see your nice UI ***localhost:4000/cqrs***
 
 It looks like this
 
-![alt text](https://firebasestorage.googleapis.com/v0/b/oaiup-ee651.appspot.com/o/Screenshot%20(64).png?alt=media&token=63f615c5-a6de-44db-b20c-8fd9042dd9b8)
+![alt text](https://firebasestorage.googleapis.com/v0/b/oaiup-ee651.appspot.com/o/Screenshot%20(68).png?alt=media&token=54816f3c-1003-49ad-a8a2-910c03385946)
 
 ***[Contributions are opened to make this UI better](https://github.com/Gifted-s/clev-cqrs-ui)***
 
