@@ -1,6 +1,6 @@
 # clev-cqrs
 
-clev-cqrs is a nodejs library that allows you to incorporate CQRS and Event sourcing into your nodejs project without any stress. It is designed to be compatible with any database and work in an asynchronous environment. clev-cqrs supports callbacks. Just hearing CQRS or Event Sourcing for the first time? check out [this](https://eventstore.com/blog/event-sourcing-and-cqrs/) article
+clev-cqrs is a nodejs library that allows you to incorporate CQRS and Event sourcing into your nodejs project without any stress. It is designed to be compatible with any database and work in an asynchronous environment. clev-cqrs supports callbacks. Just hearing CQRS or Event Sourcing for the first time? check out [our official website](https://eventstore.com/blog/event-sourcing-and-cqrs/) article
 
 
 
@@ -33,10 +33,10 @@ $ npm install clev-cqrs
 
 ```javascript
 // Using Node.js `require()`
-const clevCqrs = require("clev-cqrs");
+const clevCqrs = require('clev-cqrs');
 
 // Using ES6 imports
-import clevCqrs from "clev-cqrs";
+import clevCqrs from 'clev-cqrs';
 ```
 
 ## Overview
@@ -46,12 +46,12 @@ import clevCqrs from "clev-cqrs";
 First, we need to create a schema using the Schema constructor or simply run ```sh node ./node_modules/clev-cqrs/src/createTemplate``` from clev-cqrs, the schema should look something like this
 
 ```js
-let   clevCqrs = require("clev-cqrs");
-const ExampleView2 = require("../views/ExampleView2");
-const ExampleView = require("../views/ExampleView");
-const eventStore = require("../eventstore/eventstore");
+let   clevCqrs = require('clev-cqrs');
+const ExampleView2 = require('../views/ExampleView2');
+const ExampleView = require('../views/ExampleView');
+const eventStore = require('../eventstore/eventstore');
 let SchemaName = new clevCqrs.Schema({
-  schemaName: "schemaName e.g Product",
+  schemaName: 'schemaName e.g Product',
   fields: {
     //fields here
     //    e.g   name:{
@@ -195,7 +195,7 @@ To create a view, create an instance of the clevCqrs.View then execute the setHa
 ```js
 
 //Assuming you are using a mongo database
-const clevCqrs = require("clev-cqrs");
+const clevCqrs = require('clev-cqrs');
 let ProductDetailsView = new clevCqrs.View();
 //set handler for any event any event that is related to this view, this should relate to changes you want to make to the read database
 // for example if this a ProductDetails view you might want to check for events that affect all attribute of the product and if it's a ProductPrice view you might want to check for event that affect only name and price attribute
@@ -210,7 +210,7 @@ ProductDetailsView.setHandlers({
     };
     // add itemToAddTODB to database
 
-   db.collection("products").insertOne(itemToAddTODB).then(()=>{
+   db.collection('products').insertOne(itemToAddTODB).then(()=>{
        callback(null)
    })
    .catch((err)=>{
@@ -224,7 +224,7 @@ ProductDetailsView.setHandlers({
   // add other event handlers here for example
   handleChangeName: async function (product, callback) {
     // update database
-    await db.collections("products").updateOne({ id: product.id }, {$set:{name:product.name}}).then(()=>{
+    await db.collections('products').updateOne({ id: product.id }, {$set:{name:product.name}}).then(()=>{
        callback(null)
    })
    .catch((err)=>{
@@ -235,7 +235,7 @@ ProductDetailsView.setHandlers({
 
     handleChangePrice: async function (product, callback) {
     // update database
-    await db.collections("products").updateOne({ id: product.id }, {$set:{price:product.price}}).then(()=>{
+    await db.collections('products').updateOne({ id: product.id }, {$set:{price:product.price}}).then(()=>{
        callback(null)
    })
    .catch((err)=>{
