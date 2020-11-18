@@ -330,12 +330,12 @@ clev-Cqrs support various types which are
 The types are used when contructing your schema. An example of how to use the types is in the code below
 
 ```js
-let   clevCqrs = require("clev-cqrs");
-const ExampleView2 = require("../views/ExampleView2");
-const ExampleView = require("../views/ExampleView");
-const eventStore = require("../eventstore/eventstore");
+let   clevCqrs = require('clev-cqrs');
+const ExampleView2 = require('../views/ExampleView2');
+const ExampleView = require('../views/ExampleView');
+const eventStore = require('../eventstore/eventstore');
 let SchemaName = new clevCqrs.Schema({
-  schemaName: "User",
+  schemaName: 'User',
    fields: {
 
     name: {
